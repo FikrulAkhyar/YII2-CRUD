@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+// Select2
+@import "select2";
+@import "./vendor/select2.scss";
+
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice__display {
+  cursor: default;
+  padding-left: 2px;
+  padding-right: 5px;
+  white-space: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.table {
+  thead {
+    th {
+      @apply bg-primary
+    }
+  }
+}
+
+.table :where(th, td) {
+  white-space: normal;
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.active {
+  @apply bg-white;
+  color: black;
+}
+
+// Toastr JS
+@import "toastr";
